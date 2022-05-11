@@ -48,6 +48,7 @@ ActiveRecord::Schema.define(version: 2022_05_12_235607) do
     t.text "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "price_cents", default: 0, null: false
   end
 
   create_table "user_carts", force: :cascade do |t|
