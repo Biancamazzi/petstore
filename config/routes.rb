@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   resources :services, only: [:index, :show] do
     resources :user_cart, only: [:new, :create]
   end
+
+  resources :
   # resources :user_cart, only: [:index] do
   #     member do
   #   post :approved
