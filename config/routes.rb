@@ -5,7 +5,9 @@ Rails.application.routes.draw do
     resources :user_cart, only: [:new, :create]
   end
 
-  resources :
+  resources :user_cart, only: [:show] do
+    resources :payment, only: [:new]
+  end
   # resources :user_cart, only: [:index] do
   #     member do
   #   post :approved
