@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="title">
+    <h1>Serviços:</h1>
+  </div>
+  <div class="services">
+    <% @services.each do |service|%>
+    <div class="service">
+      <div class="service-image">
+        <%= cl_image_tag("dllfrzcflastn274psoc",
+        width: 200, height: 100, crop: :fill) %>
+      </div>
+      <div class="service-name">name: <%= link_to service.name, service_path(service)%></div>
+      <div class="service-description">description: <%= service.description%></div>
+      <div class="service-price">price: R$10 </div>
+      <br />
+    <div>
+    <% end%>
+  </div>
+</div>
