@@ -6,6 +6,7 @@
   width: fit-content;
   text-align: center;
   padding: 10px;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
 }
@@ -13,11 +14,14 @@
   margin: 20px;
 }
 .button-add{
-  width: 50px;
+  all: unset;
+  cursor: pointer;
   place-self: center;
-  border-radius: 10px;
-  background: whitesmoke;
-  border-color: whitesmoke;
+  border-radius: 6px;
+  padding: 8px;
+  background-color: #0D6EFD;
+  box-shadow: 0 2px 2px 0 #d0cdcd;
+  color: #fff;
 }
 .button-back{
   margin: 30px;
