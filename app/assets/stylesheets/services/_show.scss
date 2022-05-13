@@ -1,7 +1,25 @@
 .container-id{
-text-align: center;
-background-color: white;
+  text-align: -webkit-center;
+}
+.banner-service{
+  background-color: white;
+  width: fit-content;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
 }
 .service-name-id, .service-description-id{
   margin: 20px;
+}
+.button-add{
+  width: 50px;
+  place-self: center;
+  border-radius: 10px;
+  background: whitesmoke;
+  border-color: whitesmoke;
+}
+.button-back{
+  margin: 30px;
+  text-align: start;
 }

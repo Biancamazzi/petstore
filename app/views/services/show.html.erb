@@ -1,16 +1,14 @@
 <div class="container-id">
-  <div class="service-name-id">
-    <h2><%= @service.name %></h2>
+  <div class="banner-service">
+    <div class="service-name-id">
+      <h2><%= @service.name %></h2>
+    </div>
+    <div class="service-description-id">
+      <p><%= @service.description %></p>
+      <%= cl_image_tag("dllfrzcflastn274psoc",
+        width: 400, height: 300, crop: :fill) %>
+    </div>
+    <button class="button-add">Buy</button>
+    <div class="button-back"><%= link_to 'back', services_path %></div>
   </div>
-  <div class="service-description-id">
-    <p><%= @service.description %></p>
-  <div>
-    <%= cl_image_tag("dllfrzcflastn274psoc",
-      width: 400, height: 300, crop: :fill) %>
-  <p><%= link_to 'voltar', services_path %></p>
-<%#
-<%=form_for(@service,:action=>"update") do |f| %>
-<%# <%= submit_tag "add", :name=>"add to the cart"%>
-<%# <%end%>
-  <%# <%= @service.price %>
 </div>
