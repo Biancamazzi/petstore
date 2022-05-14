@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row py-4">
+    <div class="col-md-3"><%= image_tag @user_cart.service.photo_url, width: '100%' %></div>
+    <div class="col">
+      <h1>Order #<%= @user_cart.id %> <small><span class="badge badge-primary"><%= @user_cart.state %></span></small></h1>
+      <ul class="list-unstyled">
+        <li><strong>ISSUED ON</strong> <%= @user_cart.created_at.to_date %></li>
+        <li><strong>SERVICE</strong> <%= @user_cart.service.name %> </li>
+        <li><strong>TOTAL</strong> <%= humanized_money_with_symbol @user_cart.amount %></li>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
