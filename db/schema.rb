@@ -10,7 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2022_05_14_184145) do
+=======
+<<<<<<< HEAD
+ActiveRecord::Schema.define(version: 2022_05_13_004431) do
+=======
+ActiveRecord::Schema.define(version: 2022_05_11_204630) do
+>>>>>>> 568f71899f0db9096557bdabfc431c2235395eb2
+>>>>>>> b0cdbd4cd80205ad494d7db1c02b5b292a24e305
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -58,7 +66,10 @@ ActiveRecord::Schema.define(version: 2022_05_14_184145) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "checkout_session_id"
+<<<<<<< HEAD
     t.integer "amount_cents", default: 0, null: false
+=======
+>>>>>>> b0cdbd4cd80205ad494d7db1c02b5b292a24e305
     t.index ["service_id"], name: "index_user_carts_on_service_id"
     t.index ["user_id"], name: "index_user_carts_on_user_id"
   end

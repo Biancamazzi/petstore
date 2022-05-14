@@ -1,23 +1,38 @@
 <div class="container">
   <div class="row py-4">
+<<<<<<< HEAD
     <%# <div class="col-md-3"><%= image_tag @user_cart.service.photo_url, width: '100%' </div>%>
         <div class="col-md-3"> <%= cl_image_tag("matt-nelson-aI3EBLvcyu4-unsplash_us8tmk",
         width: 200, height: 100, crop: :fill) %>
         </div>
+=======
+    <div class="col-md-3"><%= image_tag @user_cart.service.photo_url, width: '100%' %></div>
+>>>>>>> b0cdbd4cd80205ad494d7db1c02b5b292a24e305
     <div class="col">
       <h1>Checkout summary</h1>
       <p>Purchase of <strong><%= @user_cart.service.name %></strong> for <strong><%= humanized_money_with_symbol @user_cart.amount %></strong></p>
       <button id="pay" class="btn btn-primary">Pay</button>
+<<<<<<< HEAD
+=======
+      <!-- # Commented for the lecture, remove comments.
+>>>>>>> b0cdbd4cd80205ad494d7db1c02b5b292a24e305
       <script src="https://js.stripe.com/v3/"></script>
       <script>
         const paymentButton = document.getElementById('pay');
         paymentButton.addEventListener('click', () => {
           const stripe = Stripe('<%= ENV['STRIPE_PUBLISHABLE_KEY'] %>');
           stripe.redirectToCheckout({
+<<<<<<< HEAD
             sessionId: '<%= @user_cart.checkout_session_id %>'
           });
         });
       </script>
+=======
+            sessionId: '<%= @order.checkout_session_id %>'
+          });
+        });
+      </script> -->
+>>>>>>> b0cdbd4cd80205ad494d7db1c02b5b292a24e305
     </div>
   </div>
 </div>
