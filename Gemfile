@@ -5,6 +5,7 @@ ruby '3.0.3'
 gem 'stripe'
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'money-rails'
+gem 'stripe_event'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.5', '>= 6.1.5.1'
 # Use postgresql as the database for Active Record
