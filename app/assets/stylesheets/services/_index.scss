@@ -1,0 +1,23 @@
+.container-service{
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+}
+.title{
+  margin: 20px;
+}
+.services{
+  background-color: #f8f8f8;
+  width: fit-content;
+  padding: 20px;
+}
+
+.service{
+  margin-left: 10px;
+  text-align:center;
+}
+.service-data{
+  display: flex;
+  flex-flow: column;
+  padding: 10px;
+}
