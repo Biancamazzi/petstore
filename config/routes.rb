@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   resources :user_cart, only: [:show] do
     resources :payment, only: [:new]
   end
+  mount StripeEvent::Engine, at: '/stripe-webhooks'
   # resources :user_cart, only: [:index] do
   #     member do
   #   post :approved
