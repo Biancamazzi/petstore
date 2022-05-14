@@ -8,7 +8,7 @@
       <%= cl_image_tag("matt-nelson-aI3EBLvcyu4-unsplash_us8tmk",
         width: 400, height: 300, crop: :fill) %>
     </div>
-    <button class="button-add">ADD TO CART</button>
+    <button class="button-add"> <%= link_to 'ADD TO CART', new_user_cart_payment_path%> </button>
     <div class="button-back"><%= link_to 'back', services_path %></div>
   </div>
 </div>
