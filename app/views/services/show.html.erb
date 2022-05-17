@@ -10,5 +10,9 @@
     </div>
     <button class="button-add">ADD TO CART</button>
     <div class="button-back"><%= link_to 'back', services_path %></div>
+    <%= form_tag orders_path do %>
+      <%= hidden_field_tag 'service_id', @service.id %>
+      <%= submit_tag 'Purchase', class: 'btn btn-primary' %>
+    <% end %>
   </div>
 </div>
