@@ -6,8 +6,5 @@ class ServicesController < ApplicationController
 
   def show
     @service = Service.find(params[:id])
-    # if params[:add]
-    #   @service.add = @service.add+1
-    # end
   end
 end
