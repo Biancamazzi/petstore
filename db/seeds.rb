@@ -14,24 +14,24 @@ puts 'Creating services...'
 banho = Service.create!(
   name: "Banho",
   description: "Banho completo com os melhores produtos",
-  price_cents: 9000
+  price_cents: 90
 )
 
 tosa = Service.create!(
 name: "Tosa",
 description: "Tosa especializada para a raca do seu pet",
-price_cents: 3000
+price_cents: 30
 )
 
 passeio = Service.create!(
 name: "Passeio",
 description: "Passeio na rua por uma hora com nossos profissionais",
-price_cents: 5000
+price_cents: 50
 )
 
 daycare = Service.create!(
 name: "Day Care",
 description: "Creche com o melhor ambiente para o seu melhor amigo",
-price_cents: 6000
+price_cents: 100
 )
 puts "All done with services (4) - Banho, Tosa, Passeio, Daycare"
