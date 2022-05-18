@@ -1,6 +1,7 @@
 class ServicesController < ApplicationController
+  skip_before_action :authenticate_user!
   def index
-    @service = Service.all
+    @services = Service.all
   end
 
   def show
