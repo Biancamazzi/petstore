@@ -1,6 +1,7 @@
 <div class="container-service">
   <div class="title">
     <h1>Serviços</h1>
+   <%= render 'shared/countdown' %>
   </div>
   <div class="services">
     <% @services.each do |service|%>
@@ -14,7 +15,6 @@
       <div class="service-name"> <%= link_to service.name, service_path(service)%></div>
       <div class="service-description"><%= service.description%></div>
       <div class="service-price">R$<%= service.price_cents%> </div>
-
       <br />
       </div>
     <div>
