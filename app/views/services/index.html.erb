@@ -1,5 +1,5 @@
 <div class="container-service">
-  <div class="title">
+  <div class="service-title">
     <h1>Serviços</h1>
   </div>
   <div class="services">
@@ -14,7 +14,7 @@
           <div class="card__content">
             <div class="card__title"><%= link_to service.name, service_path(service)%></div>
             <p class="card__text"><%= service.description%> </p>
-            <p>R$<%= service.price_cents%></p>
+            <p class="card__price">R$<%= service.price_cents%></p>
           </div>
         </div>
       </li>

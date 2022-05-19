@@ -5,15 +5,15 @@
     </div>
     <div class="service-description-id">
       <p><%= @service.description %></p>
+      </div>
       <div class="service-image-show">
         <% if @service.photo %>
         <%= image_tag(@service.photo) %>
         <%end%>
-      </div>
     <div class="button-purchase">
       <%= form_tag orders_path do %>
         <%= hidden_field_tag 'service_id', @service.id %>
-        <%= submit_tag 'Purchase', class: 'btn btn-primary' %>
+        <%= submit_tag 'Comprar', class: 'btn btn-primary' %>
       <% end %>
     </div>
   </div>
