@@ -6,13 +6,15 @@
     <% @services.each do |service|%>
     <div class="service">
       <div class="service-image">
-        <%= cl_image_tag("matt-nelson-aI3EBLvcyu4-unsplash_us8tmk",
-        width: 200, height: 100, crop: :fill) %>
+      <% if service.photo %>
+       <%= image_tag(service.photo) %>
+       <%end%>
       </div>
       <div class="service-data">
       <div class="service-name"> <%= link_to service.name, service_path(service)%></div>
       <div class="service-description"><%= service.description%></div>
       <div class="service-price">R$<%= service.price_cents%> </div>
+
       <br />
       </div>
     <div>
