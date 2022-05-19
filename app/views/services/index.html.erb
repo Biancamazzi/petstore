@@ -1,23 +1,25 @@
 <div class="container-service">
-  <div class="title">
+  <div class="service-title">
     <h1>Serviços</h1>
    <%= render 'shared/countdown' %>
   </div>
   <div class="services">
+    <ul class="cards">
     <% @services.each do |service|%>
-    <div class="service">
-      <div class="service-image">
-      <% if service.photo %>
-       <%= image_tag(service.photo) %>
-       <%end%>
-      </div>
-      <div class="service-data">
-      <div class="service-name"> <%= link_to service.name, service_path(service)%></div>
-      <div class="service-description"><%= service.description%></div>
-      <div class="service-price">R$<%= service.price_cents%> </div>
-      <br />
-      </div>
-    <div>
-    <% end%>
+      <li class="cards__item">
+        <div class="card">
+          <div class="service-image">
+          <% if service.photo %>
+                  <%= image_tag(service.photo) %>
+                  <%end%></div>
+          <div class="card__content">
+            <div class="card__title"><%= link_to service.name, service_path(service)%></div>
+            <p class="card__text"><%= service.description%> </p>
+            <p class="card__price">R$<%= service.price_cents%></p>
+          </div>
+        </div>
+      </li>
+      <% end%>
+    </ul>
   </div>
 </div>
