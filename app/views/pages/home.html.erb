@@ -1,25 +1,25 @@
-<div class="container-service">
-  <div class="service-title">
-    <h1>Serviços</h1>
-   <%= render 'shared/countdown' %>
-  </div>
-  <div class="services">
-    <ul class="cards">
-    <% @services.each do |service|%>
-      <li class="cards__item">
-        <div class="card">
-          <div class="service-image">
-          <% if service.photo %>
-                  <%= image_tag(service.photo) %>
-                  <%end%></div>
-          <div class="card__content">
-            <div class="card__title"><%= link_to service.name, service_path(service)%></div>
-            <p class="card__text"><%= service.description%> </p>
-            <p class="card__price">R$<%= service.price_cents%></p>
-          </div>
-        </div>
-      </li>
-      <% end%>
-    </ul>
-  </div>
+<div class="container-fluid banner-home">
+  <h1 class="text-home">We take care <br>of your<br> bestFRIEND!</h1>
 </div>
+
+<div class="container-fluid offers-home text-center">
+  <h2><strong>SERVICES</strong></h2>
+  <h4>What we offer</h4>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <i class="fa-solid fa-heart icons-home"></i>
+      <h4>LOVE</h4>
+      <p>We love what we do...</p>
+    </div>
+    <div class="col-sm-4">
+      <i class="fa-solid fa-certificate icons-home"></i>
+      <h4>CERTIFIED</h4>
+      <p>All professionals are qualified to take care of your buddy.</p>
+    </div>
+    <div class="col-sm-4">
+      <i class="fa-solid fa-leaf icons-home"></i>
+      <h4>GREEN</h4>
+      <p>We just use eco-friendly products.</p>
+    </div>
+  </div>
