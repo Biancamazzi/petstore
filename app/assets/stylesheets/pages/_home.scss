@@ -1,1 +1,69 @@
 // Specific CSS for your home-page
+.navbar-lewagon {
+  display: none;
+}
+
+.banner-home {
+  background-image: asset-url('pets3.jpg');
+  background-size: cover;
+  padding: 350px;
+  width: 100%;
+  height: 100%;
+}
+
+.text-home {
+  color: white;
+  font-size: 104px;
+  font-weight: 700;
+  position: relative;
+  left: -220px;
+  top: -120px;
+  font-family: 'Koulen', cursive;
+  text-shadow: 2px 2px 2px rgba(656, 777, 777, 0.6);
+}
+
+.icons-home {
+  font-size: 50px;
+  margin: 10px;
+  color: #87CEED;
+}
+
+.offers-home {
+  padding-top: 200px;
+  padding: 30px;
+  // background-color: #D7AD4B;
+  background-image: linear-gradient(to right, #BD963A , #D8AE4C);
+  color: white;
+  text-shadow: 1px 1px black;
+
+  h2 {
+    font-size: 48px;
+  }
+  h4 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+
+.home-btn-services {
+  margin: 32px;
+  background-color: #87CEED;
+  border-radius: 5px;
+  padding: 20px 24px;
+  font-size: 20px;
+  color: white;
+  text-shadow: 1px 1px black;
+  text-shadow: 1px black;
+  border: 2px solid gray;
+}
+
+.home-white-bar {
+  padding: 2px 640px;
+  position: relative;
+  top: -40px;
+  right: 280px;
+  background-color:#87CEED;
+}
