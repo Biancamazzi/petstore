@@ -1,8 +1,7 @@
 <div class="navbar navbar-expand-sm navbar-dark navbar-lewagon">
   <div class="container-fluid">
-    <%= link_to "#", class: "navbar-brand" do %>
-    <img src="assets/images" alt="">
-      <h1>Petstore</h1>
+    <%= link_to "/", @root, class: "navbar-brand" do %>
+    <%= image_tag "logo.svg", alt: "Petstore", height: 80 %>
     <% end %>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -11,13 +10,13 @@
       <ul class="navbar-nav me-auto">
         <%# if user_signed_in? %>
           <li class="nav-item active">
-            <%= link_to "Serviços", services_path, class: "nav-link" %>
+            <%= link_to "SERVICES", services_path, class: "nav-link" %>
           </li>
           <li class="nav-item active">
-            <%= link_to "Quem somos", "#", class: "nav-link" %>
+            <%= link_to "ABOUT US", "#", class: "nav-link" %>
           </li>
           <li class="nav-item active">
-            <%= link_to "Contato", "#", class: "nav-link" %>
+            <%= link_to "CONTACT", "#", class: "nav-link" %>
           </li>
           <li class="nav-item dropdown">
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
