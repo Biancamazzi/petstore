@@ -1,13 +1,13 @@
 <div class="container-fluid banner-home">
-  <h1 class="text-home">We take care <br>of your<br> bestFRIEND!</h1>
+  <h1 class="text-home">Your Pet,<br>Our Passion</h1>
 </div>
 
 <div class="container-fluid offers-home text-center">
-  <h2><strong>SERVICES</strong></h2>
-  <h4>What we offer</h4>
+<span class="home-white-bar"></span>
+  <h2><strong>What we offer</strong></h2>
   <br>
   <div class="row">
-    <div class="col-sm-4">
+    <div class="col-sm-4 card-home">
       <i class="fa-solid fa-heart icons-home"></i>
       <h4>LOVE</h4>
       <p>We love what we do...</p>
@@ -15,11 +15,16 @@
     <div class="col-sm-4">
       <i class="fa-solid fa-certificate icons-home"></i>
       <h4>CERTIFIED</h4>
-      <p>All professionals are qualified to take care of your buddy.</p>
+      <p>Qualified professionals</p>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4 card-home">
       <i class="fa-solid fa-leaf icons-home"></i>
       <h4>GREEN</h4>
-      <p>We just use eco-friendly products.</p>
+      <p>Eco-friendly products.</p>
     </div>
+  </div>
+
+<%= render 'shared/countdown' %>
+  <div>
+    <%= link_to '<button type="button" class="home-btn-services">Check our Services</button>'.html_safe, services_path %>
   </div>
