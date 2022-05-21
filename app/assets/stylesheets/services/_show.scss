@@ -3,7 +3,7 @@
 }
 .banner-service{
   background-color: #f8f8f8;
-  width: fit-content;
+  width: 700px;
   text-align: center;
   padding: 25px;
   margin-top: 30px;
@@ -22,20 +22,11 @@
 .service-description-id p{
   width: 500px;
 }
-.button-add{
-  all: unset;
-  cursor: pointer;
-  place-self: center;
-  border-radius: 6px;
-  padding: 8px;
-  background-color: #87CEED;
-  box-shadow: 0 2px 2px 0 #d0cdcd;
-  color: #f8f8f8;
-  margin-top: 20px;
-}
+
 .button-back{
   margin: 30px;
-  text-align: start;
+  font-size: 18px;
+  place-self: self-start;
 }
 .button-purchase{
   margin-top: 40px;
@@ -45,6 +36,10 @@
   border-radius: 5px;
   color: white;
   font-weight: 700;
+}
+
+.btn-primary:hover{
+  color: white;
 }
 .service-image-show img{
   width: 70%;

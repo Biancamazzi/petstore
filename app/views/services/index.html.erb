@@ -1,7 +1,6 @@
 <div class="container-service">
   <div class="service-title">
     <h1>Serviços</h1>
-   <%= render 'shared/countdown' %>
   </div>
   <div class="services">
     <ul class="cards">
@@ -15,7 +14,7 @@
           <div class="card__content">
             <div class="card__title"><%= link_to service.name, service_path(service)%></div>
             <p class="card__text"><%= service.description%> </p>
-            <p class="card__price">R$<%= service.price_cents%></p>
+            <p class="card__price"><%= humanized_money_with_symbol(service.price_cents/100)%></p>
           </div>
         </div>
       </li>
