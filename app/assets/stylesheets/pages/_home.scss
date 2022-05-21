@@ -1,4 +1,8 @@
 // Specific CSS for your home-page
+.navbar-lewagon {
+  display: none;
+}
+
 .banner-home {
   background-image: asset-url('pets3.jpg');
   background-size: cover;
@@ -62,8 +66,4 @@
   top: -40px;
   right: 280px;
   background-color:#87CEED;
-}
-
-.card-home {
-  // border: 2px solid gray;
 }
